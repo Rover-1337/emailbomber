@@ -1,0 +1,86 @@
+body {
+    font-family: 'NEXT ART', sans-serif;
+}
+
+.loadingscreen {
+    text-align: center;
+}
+
+.loadingscreen img {
+    /* add a animated loading screen */
+    animation: alternate 1s infinite;
+    animation-name: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    animation-duration: 1s;
+
+    width: 20%;
+}
+@keyframes alternate {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.loadingscreen p {
+    margin-top: -2%;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+    .loadingscreen img {
+        width: 40%;
+    }
+
+}
+
+
+.welcom {
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.home {
+    text-align: center;
+}
+
+.home img {
+    width: 20%;
+    transition: 1s;
+}
+
+.home img:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 700px) {
+    .home img {
+        width: 60%;
+    }
+}
+
+.attack {
+    text-align: center;
+}
+
+.attack input {
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    transition: .1s;
+}
+
+.attack input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    border-color: black;
+}
