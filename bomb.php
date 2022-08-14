@@ -31,8 +31,8 @@
                 'acyformname'=> 'formAcymailing56701'
             );
 
-            $proxy = 'resi.infiniteproxies.com:1111';
-            $proxyauth = 'infproxy_rover1337:yfE1y7phb3e4meAS';
+            $proxy = 'PROXY';
+            $proxyauth = 'PROXY';
     
             // create a curl post request
             $ch = curl_init();
